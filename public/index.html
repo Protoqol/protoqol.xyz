@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Protoqol.xyz</title>
+</head>
+<style>
+    @keyframes animatedBackground {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: 100% 0;
+        }
+    }
+
+    body {
+        background: linear-gradient(
+                rgba(255, 255, 255, 0.9),
+                rgba(255, 255, 255, 0.9)
+        ), url('<%= BASE_URL %>background.jpg') repeat-x 0 0;
+        background-size: auto;
+
+        animation: animatedBackground 75s linear infinite;
+    }
+</style>
+<body>
+<noscript>
+    <strong>
+        We're sorry but Protoqol doesn't work properly without JavaScript enabled. Please enable it to continue.
+    </strong>
+</noscript>
+<div id="app"></div>
+</body>
+</html>
