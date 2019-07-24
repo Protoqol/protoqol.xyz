@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <meta name="title" content="Protoqol">
+    <meta name="description" content="Protoqol open source software development.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://protoqol.xyz/">
+    <meta property="og:title" content="Protoqol">
+    <meta property="og:description" content="Protoqol open source software development.">
+    <meta property="og:image" content="https://protoqol.xyz/protoqol.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://protoqol.xyz/">
+    <meta property=”twitter:creator” content=”@Protoqol_XYZ”>
+    <meta property="twitter:title" content="Protoqol">
+    <meta property="twitter:description" content="Protoqol open source software development.">
+    <meta property="twitter:image" content="http://protoqol.xyz/protoqol.png">
+
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>Protoqol.xyz</title>
+    <title>Protoqol</title>
 </head>
 <style>
     @keyframes animatedBackground {
         from {
             background-position: 0 0;
         }
+
         to {
             background-position: 100% 0;
         }
     }
 
     body {
-        background: linear-gradient(
-                rgba(255, 255, 255, 0.9),
-                rgba(255, 255, 255, 0.9)
-        ), url('<%= BASE_URL %>background.jpg') repeat-x 0 0;
+        background: linear-gradient(rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)), url('<%= BASE_URL %>background.jpg') repeat-x 0 0;
         background-size: auto;
 
         animation: animatedBackground 75s linear infinite;
     }
 </style>
+
 <body>
-<noscript>
-    <strong>
-        We're sorry but Protoqol doesn't work properly without JavaScript enabled. Please enable it to continue.
-    </strong>
-</noscript>
-<div id="app"></div>
+    <noscript>
+        <strong>
+            We're sorry but Protoqol doesn't work properly without JavaScript enabled. Please enable it to continue.
+        </strong>
+    </noscript>
+    <div id="app"></div>
 </body>
+
 </html>
